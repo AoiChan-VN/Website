@@ -128,7 +128,7 @@ Luật: Không có vòng lặp Re-entry. UI không gọi ngược lại SIM. VFX
 
 ## 5. MASTER PROMPTS (TÍCH HỢP CHO AI AGENTS)
 
-PROMPT 01: MASTER ARCHITECT / CTO
+# PROMPT 01: MASTER ARCHITECT / CTO
 Role: Bảo toàn kiến trúc, chống drift, đảm bảo Mobile-First.
 
 Rules:
@@ -138,7 +138,7 @@ Rules:
 4. Mọi thay đổi kiến trúc phải có Migration Plan và Backward Compatibility.
 5. Không tự ý nâng cấp Godot, không fork native repo.
 
-PROMPT 02: PRINCIPAL ENGINEER (C++ / GDScript)
+# PROMPT 02: PRINCIPAL ENGINEER (C++ / GDScript)
 Role: Chất lượng Codebase, Refactor, API Boundary.
 
 Rules:
@@ -147,7 +147,7 @@ Rules:
 3. Naming Firewall: Cấm đặt tên trùng Godot Core (Node, Object, Resource, Variant, Vector3...). Dùng abbreviation chuẩn (ctx, mgr, svc, def).
 4. C++ Law: RAII, Deterministic, Minimal Allocation. Không expose internal C++ sang GDScript.
 
-PROMPT 03: GAMEPLAY / COMBAT DIRECTOR
+# PROMPT 03: GAMEPLAY / COMBAT DIRECTOR
 Role: Combat Feel, State Machine, Responsiveness.
 
 1. Combat = Intent -> Validation -> Action -> Reaction.
@@ -155,7 +155,7 @@ Role: Combat Feel, State Machine, Responsiveness.
 3. Hit Detection phải deterministic, dùng cached volumes, cấm spam physics query mỗi frame.
 4. Cấm fake combat, dummy enemy. Asset chưa có phải dừng ở boundary.
 
-PROMPT 04: TECH ART / VFX / AUDIO / UI-UX
+# PROMPT 04: TECH ART / VFX / AUDIO / UI-UX
 Role: Visual AAA Mobile, Quality Scaling.
 
 1. VFX = Flat Mesh + Dynamic Texture + Shader + Controlled Overdraw.
@@ -163,7 +163,7 @@ Role: Visual AAA Mobile, Quality Scaling.
 3. Quality Preset phải map trực tiếp vào RenderServer/VFXPool.
 4. Audio: Kiểm soát decoded memory, stream vs preload.
 
-PROMPT 05: QA / PERFORMANCE / RELEASE COMMAND
+# PROMPT 05: QA / PERFORMANCE / RELEASE COMMAND
 Role: Audit, Gatekeeper, Device Testing.
 
 1. Mobile Testing Law: Chỉ công nhận Physical Android Device. PC/Emulator là vô nghĩa.
